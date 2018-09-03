@@ -41,14 +41,14 @@ But these scripts have a way of working for years on end without maintenance.
 
 I would still like to see Primary Keys , Unique columns
 and Indexes represented somehow.  
-Even more than that I would like to be able to cut and paste names
-off of a graphical representation ... so who knows.  
-Maybe this will be a side project for a while.  
+Even more than that,  
+I would like to be able to cut and paste names off of a graphical representation  
+... so who knows.  Maybe this _will_ be a side project for a while.      
 
 
 ### Using
 
-Given you have an appropiatly formatted schema dumped from a SQLite database,  
+Given you have an appropriately formatted schema dumped from a SQLite database,  
 here named `dumped_schema.sql` you could
 
     sqlite_dot.awk dumped_schema.sql > dumped_schema.gv
