@@ -56,7 +56,7 @@ here named `dumped_schema.sql` you could
 
 There is the image output from the database I wrote this against included as the file
 
-    omia_schema.png
+    ![omia_schema](omia_schema.png)
 
 -----------------------------------------
     <PSA>
