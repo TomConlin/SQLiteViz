@@ -16,19 +16,20 @@ function trim(str, n){
    return substr(str, n + 1, length(str) - 2 * n)
 }
 
+
 BEGIN {print "digraph \"" ARGV[1] "\" {\n\trankdir = \"LR\"" }
 
 # begin record
 /^CREATE TABLE / {
-    tab = trim($3, 1)
+    tab = tolower(trim($3, 1))
     getline
-    col = trim($1, 1)
+    col = tolower(trim($1, 1))
     row = tab "| <" col "> " col
 }
 
 # continue record
 /^,  `/{
-    col = trim($2, 1)
+    col = tolower(trim($2, 1))
     row = row " | <" col "> " col
 }
 
