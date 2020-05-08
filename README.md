@@ -54,7 +54,7 @@ here named `dumped_schema.sql` you could
     sqlite_dot.awk dumped_schema.sql > dumped_schema.gv
 
 
-There is the image output from the database I wrote this against included as the file
+There is the image output from the database I wrote this against included as an image file
 
 ![omia_schema](omia_schema.png)
 
